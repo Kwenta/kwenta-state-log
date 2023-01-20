@@ -24,7 +24,7 @@ Provide an explanation for why this change is necessary.
 
 Outline how the change to the protocol will work and what are the steps required for implementing this change.
 
-* If the KIP is an update to an existing paragraph, clearly indicate the section and paragraph of the KSL to be updated.
+* If the KIP is an update to an existing paragraph, clearly indicate the section and paragraph of the KSL to be updated. Quote the language to be replaced with the suggested new language.
 * If the KIP is an addition to a section, clearly indicate where the proposal should live in the KSL.
 
 ## Copyright
