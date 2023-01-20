@@ -1,8 +1,7 @@
 ---
 kip: 57
 title: Remove fees for Cross Margin V1
-status: Draft
-author: Troy (@tburm)
+status: Rejected
 created: 2023-01-16
 ---
 
