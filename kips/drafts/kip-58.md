@@ -19,7 +19,7 @@ The StakingRewards contract cannot support onchain activity using staked balance
 
 Using current staked balances for, say, voting or fee distribution creates a system that can be easily manipulated by actors who decide to stake before a favorable voting or fee distribution event to gain higher share. Historical staked balances are much harder to manipulate especially when the future outcome is unknown (future proposals or fees to be generated that epoch). 
 
-Staked amounts will also need to be locked for a meaningful amount of time to discourage the short term buying of votes, fee revenue, or locked inflationary rewards. 
+Staked amounts will also need to be locked for a meaningful amount of time to discourage disruptive short term actions such as the buying of votes, fee revenue, or locked inflationary rewards. 
 
 ## Specification
 
@@ -32,6 +32,8 @@ A cooldown (two weeks) timer will need to be implemented staking. This cooldown 
 ```solidity
 uint256 lastStakeTime; // reset to current block timestamp when KWENTA is staked
 ```
+
+Two weeks was chosen because an epoch at Kwenta is typically defined as one week (trading rewards, inflation mint). Two weeks, at minimum, should be enough to deter bad actors from attempting to disrupt elections or stake to capture fees/rewards for an epoch. As requested (by the Elite Council), this cooldown value will be adjustable, with a minimum of one week to a maximum of one year.
 
 ### Historical Staked Amounts (Checkpointing) 
 
