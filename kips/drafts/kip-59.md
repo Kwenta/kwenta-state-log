@@ -17,6 +17,7 @@ Currently, only spot assets are available to trade via the Kwenta exchange. By o
 The leveraged tokens will be built and run by Toros Finance using Perps v2, to automate rebalancing of assets to achieve the set leverage ratio.
 The tokens will be available for trading on the Kwenta spot exchange.
 
+These leveraged tokens will have an entry fee set at 0.1%. This fee will be split 50/50 between Kwenta and Toros Finance.
 
 ## Copyright
 
