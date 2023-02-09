@@ -18,7 +18,7 @@ This KIP replaces KIP-29 with a plan which closely mirrors a distribution plan f
 The SIP-2003 proposal currently being discussed in Synthetix governance distributes 200,000 OP tokens per week to perps v2 traders, which will be claimed through the Kwenta frontend. A distribution of Kwenta’s OP tokens over the same time period ensures that Kwenta traders realize the maximum benefit over this period.
 
 Although previous plans targeted traders on other platforms, this unique opportunity to work in conjunction with Synthetix and maximize rewards for Kwenta traders should incentivize users to migrate and try Perps v2 without the need for the added complexity of targeting only users of other exchanges.
-To ensure the spirit of the original Optimism Grant proposal is maintained, no tier multiplier will exist for $KWENTA stakers in order to direct incentives at new users migrating from other platforms. Incentives for $KWENTA distributed in locked $KWENTA already ensure that staking is attractive for traders.
+To ensure the spirit of the original Optimism Grant proposal is maintained, no tier multiplier will exist for KWENTA stakers in order to direct incentives at new users migrating from other platforms. Incentives for KWENTA distributed in locked KWENTA already ensure that staking is attractive for traders.
 
 ## Specification
 
@@ -128,7 +128,7 @@ index 8be42d5..739ea7a 100644
 -
 -All on-chain actions will be dependent on the launch of Kwenta cross margin functionality, currently scheduled for launch in mid-October, and users may begin completing on-chain actions immediately following this launch.
 -
--Users will be able to claim OP tokens at a later date, which is dependent on the $KWENTA token launch and completion of the token claim UI.
+-Users will be able to claim OP tokens at a later date, which is dependent on the KWENTA token launch and completion of the token claim UI.
 -
 -**Disqualification**
 -
