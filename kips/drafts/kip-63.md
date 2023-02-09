@@ -1,7 +1,7 @@
 ---
 kip: 63
 title: Deprecation of Synthetix Futures (V1) on Kwenta
-status: Draft
+status: Approved
 created: 2023-02-01
 section: 4.4, 4.5
 ---
