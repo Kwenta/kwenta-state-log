@@ -201,6 +201,7 @@ ves.
 -
 -Kwenta will be offering KWENTA in the upcoming competitions alongside OP. There will be no change to the existing developer compensation model, OP will be used to fuel development alongside the existing proven model.
 -
+```
 
 ## Copyright
 
