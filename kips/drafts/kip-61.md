@@ -7,7 +7,7 @@ section: 5.4
 ---
 
 ## Simple Summary
-Distribute 30,000 $OP in weekly Perps V2 trading rewards for 20 weeks, totaling 600,000 $OP.
+Distribute 30,000 OP in weekly Perps V2 trading rewards for 20 weeks, totaling 600,000 OP.
 
 ## Abstract
 Due to hurdles implementing KIP-29 and the deprecation of V1 Cross Margin, it is necessary to replace the KIP-29 distribution plan with an updated distribution for v2.
@@ -15,7 +15,7 @@ Due to hurdles implementing KIP-29 and the deprecation of V1 Cross Margin, it is
 This KIP replaces KIP-29 with a plan which closely mirrors a distribution plan from Synthetix, providing some overlap in technical implementation and ensuring a large number of Kwenta traders can realize a more significant benefit than Kwenta could offer by distributing rewards in isolation.
 
 ## Motivation
-The SIP-2003 proposal currently being discussed in Synthetix governance distributes 200,000 $OP tokens per week to perps v2 traders, which will be claimed through the Kwenta frontend. A distribution of Kwenta’s $OP tokens over the same time period ensures that Kwenta traders realize the maximum benefit over this period.
+The SIP-2003 proposal currently being discussed in Synthetix governance distributes 200,000 OP tokens per week to perps v2 traders, which will be claimed through the Kwenta frontend. A distribution of Kwenta’s OP tokens over the same time period ensures that Kwenta traders realize the maximum benefit over this period.
 
 Although previous plans targeted traders on other platforms, this unique opportunity to work in conjunction with Synthetix and maximize rewards for Kwenta traders should incentivize users to migrate and try Perps v2 without the need for the added complexity of targeting only users of other exchanges.
 To ensure the spirit of the original Optimism Grant proposal is maintained, no tier multiplier will exist for $KWENTA stakers in order to direct incentives at new users migrating from other platforms. Incentives for $KWENTA distributed in locked $KWENTA already ensure that staking is attractive for traders.
@@ -26,12 +26,13 @@ Rewards for each trader will be calculated based on fees paid and average open i
 
 Users are assigned a trader score based on their total fees paid and time-averaged open interest:
 
-traderScore = feesPaid^0.8 * averageoi^0.2
+`traderScore = feesPaid^0.8 * averageoi^0.2`
 
-Each trader will then earn a pro rata share of the total weekly rewards
-traderScore / sum(traderScores) * weeklyReward total = yourReward
+Each trader will then earn a pro rata share of the total weekly rewards:
 
-Traders will be able to claim their $OP token rewards weekly in the same place that $OP rewards from Synthetix are claimable.
+`traderScore / sum(traderScores) * weeklyReward total = yourReward`
+
+Traders will be able to claim their OP token rewards weekly in the same place that OP rewards from Synthetix are claimable.
 
 ## Suggested KSL Changes
 
@@ -69,16 +70,16 @@ index 8be42d5..739ea7a 100644
  * DAO Contributor Incentives 20%
  
 -**Platform Migration Incentives**
--Amount: 600,000 $OP
+-Amount: 600,000 OP
 +**Perps V2 Trading Incentives**
  
 -**Tier 1 - Onboarding**
 +Amount: 600,000 OP
  
--Amount: 200,000 $OP
+-Amount: 200,000 OP
 +Rewards for each trader will be calculated based on fees paid and average open interest over the period. In this distribution, fees are weighted more heavily than volume, which incentivizes trading over arbitrage and other low risk strategies, which is most attractive to the type of user most likely to generate revenue for Kwenta in the future when the v2 implementation of cross margin is available.
  
--Reward per wallet for full completion: 80 $OP
+-Reward per wallet for full completion: 80 OP
 +Users are assigned a trader score based on their total fees paid and time-averaged open interest:
  
 -Required actions:
@@ -90,11 +91,11 @@ index 8be42d5..739ea7a 100644
 -**Tier 2 - Test Drive**
 +Each trader will then earn a pro rata share of the total weekly rewards:
  
--Amount: 200,000 $OP
+-Amount: 200,000 OP
 +`traderScore / sum(traderScores) * weeklyReward total = yourReward`
  
--Reward per wallet for full completion: 80 $OP
-+Traders will be able to claim their $OP token rewards weekly.
+-Reward per wallet for full completion: 80 OP
++Traders will be able to claim their OP token rewards weekly.
  
 -Required actions:
 -Complete Tier 1 requirements
@@ -104,30 +105,30 @@ index 8be42d5..739ea7a 100644
 -* Tier 2 actions must be completed within 21 days of the completion of Tier 1 actions
 -
 -**Bonus A - DYDX Trader Boost**
--Amount: 100,000 $OP
+-Amount: 100,000 OP
 -
--Max reward per wallet: 40 $OP
+-Max reward per wallet: 40 OP
 -
 -Required actions:
--* Complete Tier 1 requirements using a wallet which interacted with DYDX prior to September 1st, 2022 to earn 20 $OP.
--* Complete Tier 2 requirements from a wallet which interacted with DYDX prior to September 1st, 2022 to earn 20 additional $OP.
+-* Complete Tier 1 requirements using a wallet which interacted with DYDX prior to September 1st, 2022 to earn 20 OP.
+-* Complete Tier 2 requirements from a wallet which interacted with DYDX prior to September 1st, 2022 to earn 20 additional OP.
 -*September 1st, 2022 will be defined as beginning with ETH mainnet block 15449618.
 -
 -**Bonus B - Optimism Quest Boost**
 -
--Amount: 100,000 $OP
+-Amount: 100,000 OP
 -
--Max reward per wallet: 40 $OP
+-Max reward per wallet: 40 OP
 -
 -Required actions:
--* Complete Tier 1 requirements using a wallet which completed the Optimism Quest and received the NFT to earn 20 $OP
--* Complete Tier 2 requirements from a wallet which completed the Optimism Quest and received the NFT to earn 20 additional $OP
+-* Complete Tier 1 requirements using a wallet which completed the Optimism Quest and received the NFT to earn 20 OP
+-* Complete Tier 2 requirements from a wallet which completed the Optimism Quest and received the NFT to earn 20 additional OP
 -
 -**Dependencies**
 -
 -All on-chain actions will be dependent on the launch of Kwenta cross margin functionality, currently scheduled for launch in mid-October, and users may begin completing on-chain actions immediately following this launch.
 -
--Users will be able to claim $OP tokens at a later date, which is dependent on the $KWENTA token launch and completion of the token claim UI.
+-Users will be able to claim OP tokens at a later date, which is dependent on the $KWENTA token launch and completion of the token claim UI.
 -
 -**Disqualification**
 -
@@ -135,7 +136,7 @@ index 8be42d5..739ea7a 100644
 -* Withdrawing from the cross margin wallet.
 -* Leaving the Kwenta Discord server.
 -
--The following actions may result in a wallet being permanently disqualified from the $OP incentives program:
+-The following actions may result in a wallet being permanently disqualified from the OP incentives program:
 -
 -* Removal from Discord due to being flagged as a bot or malicious user.
 -
@@ -144,19 +145,19 @@ index 8be42d5..739ea7a 100644
 -Rewards from Tier 1 and Tier 2 will be awarded to the first 2,500 unique users to complete each individual bounty or bonus. Users must be eligible to receive rewards from Tier 1 in order to qualify for Tier 1 bonuses or Tier 2 rewards. Users m
 ust be eligible to receive rewards from Tier 2 in order to be eligible for Tier 2 bonuses.
 -
--In the case that 2,500 eligible users have completed Tier 1 actions and 21 days has passed, unallocated $OP may be reallocated to this program, or other incentive programs or marketing initiatives at the discretion of the treasury.
+-In the case that 2,500 eligible users have completed Tier 1 actions and 21 days has passed, unallocated OP may be reallocated to this program, or other incentive programs or marketing initiatives at the discretion of the treasury.
 -
--In the case that $OP tokens have not been claimed 180 days after the launch of the incentive program, tokens may be clawed back and used at the discretion of the treasury for future incentive programs or marketing initiatives.
+-In the case that OP tokens have not been claimed 180 days after the launch of the incentive program, tokens may be clawed back and used at the discretion of the treasury for future incentive programs or marketing initiatives.
 +**Competition**
 
- Competition Prizes: 120,000 $OP
+ Competition Prizes: 120,000 OP
  
 -Method: Kwenta will be hosting 2 competitions to kickoff the launch of the Kwenta token. The OP token will be used to incentivize participation by being added to the prize pool.
 +Method: Kwenta hosted 2 competitions to kickoff the launch of the Kwenta token. The OP token was used to incentivize participation by being added to the prize pool.
  
  **DAO Contributors**
  
-@@ -149,38 +96,6 @@ Amount: 180,000 $OP
+@@ -149,38 +96,6 @@ Amount: 180,000 OP
  
  Method: Individuals who have contributed towards governance and development within the Kwenta DAO will receive 50% of the OP based on a Core Contributor-derived assessment of the value provided by the included members. 50% of the OP would put 
 towards Kwenta devDAO bounties, incentivizing development on top of Kwenta and Optimism.
