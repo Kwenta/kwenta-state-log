@@ -18,12 +18,13 @@ The second trial revealed that the Velodrome WETH/KWENTA pool was able to attrac
 ![Liquidity Mining Incentives](../../images/kip-64-liquidity-incentives.png)
 
 ## Specification
-The allocation of liquidity mining incentives will be based on the KWENTA inflation schedule, starting from epoch 14. The incentives will be equal to 0.9% of the scheduled inflation for each epoch. For example, in epoch 14, the incentives will be 99.44 KWENTA, while in epoch 15, the incentives will be 97.40 KWENTA.
+The allocation of liquidity mining incentives will be based on the KWENTA inflation schedule, starting from epoch 16. The incentives will be equal to 0.5% of the scheduled inflation for each epoch. For example for epoch 16 the proposed 0.5% of the scheduled inflation would be 53 KWENTA.
 
-Liquidity minig incentives allocation schedule:
-* Epoch 13 (100 KWENTA): 50% Velodrome, 50% Arrakis 
-* Epoch 14: 65% Velodrome, 35% Arrakis 
-* Epoch 15: 80% Velodrome, 20% Arrakis 
+Liquidity mining incentives allocation schedule:
+
+* Epoch 13: 50 KWENTA Velodrome, 50 KWENTA Arrakis 
+* Epoch 14: 50 KWENTA Velodrome, 35 KWENTA Arrakis 
+* Epoch 15: 50 KWENTA Velodrome, 20 KWENTA Arrakis
 * From epoch 16 and beyond, all of the liquidity mining incentives will be allocated solely to Velodrome. 
 
 ## Copyright
