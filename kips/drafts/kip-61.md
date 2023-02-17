@@ -32,7 +32,7 @@ Each trader will then earn a pro rata share of the total weekly rewards:
 
 `traderScore / sum(traderScores) * weeklyReward total = yourReward`
 
-Traders will be able to claim their OP token rewards weekly in the same place that OP rewards from Synthetix are claimable.
+Traders will be able to claim their OP token rewards weekly in the same place that OP rewards from Synthetix are claimable. Rewards will begin simultaneously with rewards from Synthetic, and for the same 20 week period.
 
 ## Suggested KSL Changes
 
