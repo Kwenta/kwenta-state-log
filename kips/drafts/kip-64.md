@@ -1,7 +1,7 @@
 ---
 kip: 64
 title: Liquidity Mining Incentives
-status: Draft
+status: Implemented
 created: 2023-02-08
 section: 5.6
 ---

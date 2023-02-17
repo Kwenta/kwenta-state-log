@@ -1,7 +1,7 @@
 ---
 kip: 65
 title: Integrate ‘Widgetbot’ Chatbox to Kwenta dapp
-status: Draft
+status: Approved
 created: 2022-02-11
 section: 4
 ---
