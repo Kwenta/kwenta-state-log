@@ -1,10 +1,10 @@
---
+---
 kip: 66
 title: Adjust trading reward eligibility
 status: Draft
 created: 2022-02-16
 section: 3.4
---
+---
 
 ### Simple Summary
 Adjust the trades eligible for trading rewards in order to focus rewards on Kwenta traders.
