@@ -1,7 +1,7 @@
 ---
 kip: 58
 title: Staking V2
-status: Draft
+status: Approved
 created: 2023-01-05
 ---
 

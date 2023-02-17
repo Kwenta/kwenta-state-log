@@ -1,7 +1,7 @@
 ---
 kip: 56
 title: Web Analytics
-status: Draft
+status: Approved
 created: 2023-01-13
 ---
 

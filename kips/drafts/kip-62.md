@@ -1,7 +1,7 @@
 ---
 kip: 62
 title: Escrow V2 (Escrow Transferrability)
-status: Draft
+status: Approved
 created: 2023-01-28
 section: 3
 ---
