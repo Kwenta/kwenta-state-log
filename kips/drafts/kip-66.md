@@ -23,10 +23,11 @@ This change will focus rewards toward geniune users of Kwenta by limiting reward
 * Update the API endpoint to the Perps V2 subgraph: https://api.thegraph.com/subgraphs/name/kwenta/optimism-perps
 * Add a filter to futuresTrades where trackingCode is equal to KWENTA
 
+ If approved, these changes will go into effect for the first upcoming trading rewards epoch on perps v2 after vote passed.
+
 This proposes the following change to Section 3.4 of the KSL:
 ```
 old:
-
 It’s important to note that 𝑓𝑒𝑒𝑠_𝑝𝑎𝑖𝑑 is used here rather than 𝑡𝑟𝑎𝑑𝑖𝑛𝑔𝑣𝑜𝑙𝑢𝑚𝑒 to prevent abuse. Since different markets will have lower fees than others (e.g. FOREX markets may have extremely low fees), malicious stakers may inflate their rewards by trading large volumes in low fee markets. Using 𝑓𝑒𝑒𝑠_𝑝𝑎𝑖𝑑 levels the playing field for all stakers.
 
 new:
