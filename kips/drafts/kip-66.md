@@ -1,7 +1,7 @@
 ---
 kip: 66
 title: Adjust trading reward eligibility
-status: Draft
+status: Implemented
 created: 2022-02-16
 section: 3.4
 ---
@@ -33,7 +33,7 @@ It’s important to note that 𝑓𝑒𝑒𝑠_𝑝𝑎𝑖𝑑 is used here rat
 new:
 It’s important to note that 𝑓𝑒𝑒𝑠_𝑝𝑎𝑖𝑑 is used here rather than 𝑡𝑟𝑎𝑑𝑖𝑛𝑔𝑣𝑜𝑙𝑢𝑚𝑒 to prevent abuse. Since different markets will have lower fees than others (e.g. FOREX markets may have extremely low fees), malicious stakers may inflate their rewards by trading large volumes in low fee markets. Using 𝑓𝑒𝑒𝑠_𝑝𝑎𝑖𝑑 levels the playing field for all stakers.
 
-To focus rewards on volume generated from Kwenta's frontend, 𝑓𝑒𝑒𝑠_𝑝𝑎𝑖𝑑 will be limited to trades with a tracking code of KWENTA starting at epoch 
+To focus rewards on volume generated from Kwenta's frontend, 𝑓𝑒𝑒𝑠_𝑝𝑎𝑖𝑑 will be limited to trades with a tracking code of KWENTA starting at epoch 14.
 ```
 
 ### Copyright
