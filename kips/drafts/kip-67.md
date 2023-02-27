@@ -8,11 +8,11 @@ section: 7
 
 ## Simple Summary
 
-Create an entity that helps the DAO manage IP, expenses, and compliance.
+Create an entity that helps the DAO  manage IP, expenses, and compliance.
 
 ## Abstract
 
-Kwenta Core Contributors will work with Horizons and offshore counsel to establish an orphaned entity in the Cayman Islands.
+Kwenta Core Contributors will work with Horizons and counsel to establish an orphaned entity in the Cayman Islands.
 
 ## Motivation
 
@@ -23,10 +23,10 @@ Kwenta currently has scalability issues: Kwenta code is currently open source, m
 **The nature of this KIP is exploratory and subject to feasibility.**
 
 This KIP includes the following deliverables: 
-* Horizons will work with appropriate offshore counsel to structure an orphaned entity in the Cayman Islands which the Kwenta DAO will manage.
+* Horizons will work with appropriate counsel to structure an orphaned entity in the Cayman Islands which the Kwenta DAO will manage.
 * The Core Contributors will move any sensitive IP under the control of the orphaned entity, or a proper subsidiary of the entity.
 * The Core Contributors will work with the orphaned entity to establish a system to handle expenses. 
-* The Core Contributors and Horizons will work with the orphaned entity to establish compliance standards that allow centralized entities to interface with Kwentae. 
+* The Core Contributors and Horizons will work with the orphaned entity to establish compliance standards that allow centralized entities to interface with Kwenta. 
 
 This KIP suggests to add the following new paragraph to section 7:
  
