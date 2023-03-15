@@ -8,11 +8,11 @@ section: 4.2
 
 ## Simple Summary
 
-Host the Kwenta State Log repository on GitHub for easier maintainance and community collaboration.
+Host the Kwenta State Log repository on GitHub for easier maintenance and community collaboration.
 
 ## Abstract
 
-The current state of Radicle development does not allow for efficient and smooth maintainance and collaboration, resulting in too many disruptions and additional CC manpower necessary to maintain it. To solve this the KIP suggests to move the Kwenta State Log repository from Radicle to GitHub for easier maintainance and collaboration.
+The current state of Radicle development does not allow for efficient and smooth maintenance and collaboration, resulting in too many disruptions and additional CC resources necessary to maintain it. To solve this, the KIP suggests moving the Kwenta State Log repository from Radicle to GitHub for easier maintenance and collaboration.
 
 ## Motivation
 
