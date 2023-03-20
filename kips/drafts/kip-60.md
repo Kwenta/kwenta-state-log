@@ -1,7 +1,7 @@
 ---
 kip: 60
 title: Lyra Hosting Pilot
-status: Approved
+status: Implemented
 created: 2023-01-26
 ---
 

@@ -1,7 +1,7 @@
 ---
 kip: 67
 title: Cayman Island Entity Establishment
-status: Draft
+status: Approved
 created: 2023-02-21
 section: 7
 ---

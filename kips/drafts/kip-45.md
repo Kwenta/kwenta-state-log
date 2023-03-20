@@ -1,7 +1,7 @@
 ---
 kip: 45
 title: Adjust allocation of KWENTA forfeited through early vesting  
-status: Draft
+status: Approved
 created: 2022-11-28
 ---
 

@@ -1,7 +1,7 @@
 ---
 kip: 68
 title: Improve Trading Rewards Eligibility
-status: Draft
+status: Approved
 created: 2023-03-15
 section: 3.4
 ---
