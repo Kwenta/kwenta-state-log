@@ -20,4 +20,4 @@ KIPs currently up for discussion can be found in the [drafts folder](./kips/draf
 
 Copyright and related rights waived via [CC0](https://creativecommons.org/publicdomain/zero/1.0/).
 
-> This document was last edited on Feb 27, 2023. Based on work by different members of the Kwenta community.
+> This document was last edited on Mar 20, 2023. Based on work by different members of the Kwenta community.

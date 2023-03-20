@@ -1,7 +1,7 @@
 ---
 kip: 69
 title: Host KSL on GitHub
-status: Draft
+status: Implemented
 created: 2023-03-15
 section: 4.2
 ---
