@@ -1,6 +1,6 @@
 ---
 KIP: 70
-Title: Modify Kwenta Rewards Calculation for Pilot Incentive Program
+Title: Trial $KWENTA rewards for non-stakers
 Author: Burt Rock (@BurtRock)
 Status: Draft
 Created: 2023-03-24
