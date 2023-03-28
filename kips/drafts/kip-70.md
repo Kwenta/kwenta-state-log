@@ -8,11 +8,11 @@ section: 3.4
 
 ## Summary
 
-Distribute $KWENTA rewards to non-stakers who trade by adding 0.1 $KWENTA to the `staked_KWENTA` value in the rewards calculation for epochs 19 and 20.
+Distribute $KWENTA rewards to non-stakers who trade by adding 0.1 $KWENTA to the `staked_KWENTA` value in the rewards calculation for epochs 20 and 21.
 
 ## Abstract
 
-This proposal suggests modifying the rewards calculation for Kwenta's incentive program to provide additional rewards for non-stakers, encouraging traders to migrate to Kwenta and incentivizing them to stake. The proposed change is to add 0.1 $KWENTA to the `staked_KWENTA` value in the rewards calculation, treating traders as if they have an additional 0.1 staked, eliminating the possibility of a 0 being used in the rewards calculation for any trader. The pilot program will run for two weeks in epochs 19 and 20, and will be evaluated by the Elite Council before continuation.
+This proposal suggests modifying the rewards calculation for Kwenta's incentive program to provide additional rewards for non-stakers, encouraging traders to migrate to Kwenta and incentivizing them to stake. The proposed change is to add 0.1 $KWENTA to the `staked_KWENTA` value in the rewards calculation, treating traders as if they have an additional 0.1 staked, eliminating the possibility of a 0 being used in the rewards calculation for any trader. The pilot program will run for two weeks in epochs 20 and 21, and will be evaluated by the Elite Council before continuation.
 
 This proposal does not distribute $KWENTA tokens, modify $KWENTA balances, or impact any calculation involving $KWENTA tokens outside of the weekly trading rewards distribution during the pilot period. 
 
@@ -28,7 +28,7 @@ A two week trial allows us to promote non-stake rewards and provides an opportun
 
 Insert to section 3.4, line 56:
 ```
-For epochs 19 and 20 only, `rewards_score` will be calculated using the formula `rewards_score = fees_paid^a * (staked_KWENTA+0.1)^1-a` in order to trial a non-stake $KWENTA rewards program.
+For epochs 20 and 21 only, `rewards_score` will be calculated using the formula `rewards_score = fees_paid^a * (staked_KWENTA+0.1)^1-a` in order to trial a non-stake $KWENTA rewards program.
 ```
 Once the two-week pilot has ended, the program will be evaluated by the Elite Council before continuation, and will be terminated if it is not extended or modified by a subsequent proposal.
 
