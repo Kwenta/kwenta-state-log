@@ -8,7 +8,7 @@ section: 2.2, 2.10, 4.1
 
 ## Simple Summary
 
-Abolish the Elite Council president and distribute its task among existing DAO institutions.
+Abolish the Elite Council president and distribute its task among existing Kwenta subDAOs.
 
 ## Abstract
 
@@ -16,9 +16,10 @@ The KIP proposes to abolish the role of the president within the Elite Council. 
 
 ## Motivation
 
-While the initial establishment of a president intended to introduce a decisive party in case of a draw for voting decisions with the Elite Council, the DAO should strive for more unanimous decision-making in case of Elite Council dividedness. The current 3/5 majority should suffice for Elite Council decision-making.
+Upon the inception of the presidential role, the primary objective was to provide a decisive voice in instances of deadlocks during voting sessions within the Elite Council. However, it is essential for the DAO to strive for a more consensual decision-making process in the event of a divided Elite Council. The existing 3/5 quorum should remain adequate for Elite Council decision-making.
 
-The other task of the president is currently to establish the strategy and roadmap of the KwentaDAO, however the president alone should not be solely responsible for the roadmap. Different institutions within the DAO are involved in determining the roadmap, such as the Core Contributors, Management Contributors, adminDAO, treasuryDAO and ultimately also the Elite Council. Is is therefore of the interest of the DAO to have a mutually worked out roadmap and stategy in place, which is ultimately approved by the Elite Council.
+Moreover, the president's secondary responsibility currently involves the development and implementation of KwentaDAO's strategic framework and roadmap. Nevertheless, it is crucial to recognize that the president should not assume this responsibility singlehandedly. Various parts of the DAO, such as Core Contributors, Management Contributors, adminDAO, treasuryDAO, the Elite Council itself and most importantly the Kwenta community, play a significant role in determining the organization's roadmap. Consequently, it is in the best interest of the DAO to collaborate on the development of a comprehensive strategy and roadmap, which will ultimately require the approval of the Elite Council. 
+
 
 ## Specification
 
