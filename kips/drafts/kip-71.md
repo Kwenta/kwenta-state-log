@@ -12,7 +12,7 @@ Abolish the Elite Council president and distribute its task among existing DAO i
 
 ## Abstract
 
-The KIP proposes to abolish the role of the president within the Elite Council. Tasks under the role of the president can be easily catched up by existing DAO institutions, such as the Management Contributors, adminDAO and Elite Council, making its role obsolete.
+The KIP proposes to abolish the role of the president within the Elite Council. Tasks under the role of the president can be easily picked up by existing Kwenta subDAOs, such as the Management Contributors, adminDAO and Elite Council, making its role obsolete.
 
 ## Motivation
 
