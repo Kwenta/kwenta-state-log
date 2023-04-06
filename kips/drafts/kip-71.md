@@ -23,6 +23,8 @@ Moreover, the president's secondary responsibility currently involves the develo
 
 ## Specification
 
+The KIP will go into effect as soon as it has successfully passed governance vote.
+
 The KIP suggests the following changes to the KSL:
     
 * Remove the additional vote of the president and maintain solely a 3/5 majority requirement
