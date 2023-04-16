@@ -33,7 +33,7 @@ kwentaBoost values will have three tiers based on a stakers' $KWENTA balance at 
 | $KWENTA Staked |  kwentaBoost | 
 |---|---|
 | 1 ≤ $KWENTA < 10 |  1.05 |             
-| 10 ≤ $KWENTA < 10 |  1.075 |             
+| 10 ≤ $KWENTA < 100 |  1.075 |             
 | 100 ≤ $KWENTA < 200 |  1.1 |            
 | $KWENTA > 200 |  1.15 |           
 
