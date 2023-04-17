@@ -33,8 +33,8 @@ kwentaBoost values will have three tiers based on a stakers' $KWENTA balance at 
 | $KWENTA Staked |  kwentaBoost | 
 |---|---|
 | 1 ≤ $KWENTA < 10 |  1.05 |             
-| 10 ≤ $KWENTA < 50 |  1.075 |             
-| 50 ≤ $KWENTA < 100 |  1.1 |            
+| 10 ≤ $KWENTA < 25 |  1.075 |             
+| 25 ≤ $KWENTA < 100 |  1.1 |            
 | $KWENTA > 100 |  1.15 |           
 
 $KWENTA balance for each user will be the sum of staked escrow and liquid staked $KWENTA at the time of each snapshot.
