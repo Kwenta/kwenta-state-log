@@ -2,8 +2,8 @@
 kip: 73
 title: Smart Margin Account Upgrade v2.1.0
 status: Draft
-author: Jared Borders (@jaredborders)
 created: 2023-04-17
+section: 4
 ---
 
 ## Summary
