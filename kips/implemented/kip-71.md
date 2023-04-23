@@ -1,7 +1,7 @@
 ---
 kip: 71
 title: Abolish Presidental Governance 
-status: Draft
+status: Implemented
 created: 2023-03-14
 section: 2.2, 2.10, 4.1
 ---

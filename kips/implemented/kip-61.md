@@ -1,7 +1,7 @@
 ---
 kip: 61
 title: Perps V2 Trading Incentives
-status: Approved
+status: Implemented
 created: 2023-02-08
 section: 5.4
 ---
