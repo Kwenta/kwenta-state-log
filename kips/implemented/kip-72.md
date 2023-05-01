@@ -1,7 +1,7 @@
 ---
 kip: 72
 title: $OP Boost for $KWENTA stakers adjustment
-status: Draft
+status: Implemented
 created: 2023-04-10
 section: 5.4
 ---

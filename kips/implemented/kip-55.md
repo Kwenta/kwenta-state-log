@@ -1,7 +1,7 @@
 ---
 kip: 55
 title: Cross-Margin v2.0.0 (CMv2)
-status: Approved
+status: Implemented
 created: 2022-12-14
 ---
 
