@@ -4,7 +4,6 @@ title: Smart Margin Account Upgrade v2.1.0
 status: Draft
 created: 2023-04-17
 section: 4
-author: Jared Borders (@jaredborders)
 ---
 
 ## Summary
