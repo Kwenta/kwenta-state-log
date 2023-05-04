@@ -1,6 +1,6 @@
 ---
 kip: 73
-title: Smart Margin Account Upgrade v2.1.0
+title: Smart Margin Account Upgrade v2.0.1
 status: Draft
 created: 2023-04-17
 section: 4
