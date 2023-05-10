@@ -20,10 +20,12 @@ Track all vest penalty events and send the rewards to ongoing stakers once V2 st
 
 ## Specification
 
-This proposal will extends the scope of KIP-45 with the following steps:
+This proposal extends the scope of KIP-45 with the following steps:
 
-Track all rewards accumulated from vest-early penalties from when KIP-45 was approved to the the launch of V2 staking and put aside 50% of these rewards.
-In the epoch that once V2 staking officially gets deployed to OP mainnet, the accumulated rewards would be distributed to stakers across 20 weeks (5% of the accumulated rewards each week) in escrow. 
+1. Track all rewards accumulated from vest-early penalties from when KIP-45 was approved to the the launch of V2 staking and put aside 50% of these rewards.
+2. In the epoch that once V2 staking officially gets deployed to OP mainnet, the accumulated rewards would be distributed to stakers across 20 weeks (5% of the accumulated rewards each week) in escrow. 
+
+Lastly, note that rewards will be a part of the module that is created for KIP-45's early vest fee redistribution. Therefore rewards will be **in addition** to ongoing redistribution rewards at the time of launch.
 
 ## Copyright
 
