@@ -45,13 +45,15 @@ All order book based exchanges have a bid-ask spread. This spread is typically a
 
 It's also important to note that because the oracle is fully onchain, this mechanism can be used atomically and is composable with other protocols. 
 
-### Counterparty Liquidity Provisioning
+### Liquidity Provisioning
 
 The initial model for liquidity will be a stable vault of either USDC, DAI, or a stablecoin native to the deployed chain. This simplifies the initial implementation and allows profits or losses to easily be settled in USD.
 
 > Synthetix V3 will provide a way to bootstrap pools of liquidity for protocols building financial derivatives. It is possible to build TWAP Perps as an SNXv3 "Market" as the mechanism can function agnostic of the base liquidity pool. This avenue can be explored if V3 permissionless pools are ready before our MVP.
 
-In the future we'd like to explore depositing this liquidity into Uniswap V3 positions. This would allow us to strengthen the TWAP oracle for illiquid pairs. See *Scalability and Future Research* for more details.
+A percentage (if not initially 100%) of this liquidity will be wrapped and deposited into Uniswap V3 as a full range liquidity position. This not only provides extra yield for LPs, but is essential to deepening the liquidity of a pair and strengthening its oracle. Therefore oracle robustness becomes a function of system liquidity and as more traders trade, more liquidity enters the system, and the mechanism becomes more resistant to manipulation. The more resistant it is to manipulation the more we can decrease the spread and attract more traders.
+
+If this liquidity growth and scaling model works for ETH/USD, it can be scaled scaled to other asset pairs that may be more illiquid.
 
 ### Oracle & Manipulation Resistance
 
@@ -66,12 +68,6 @@ Initially, the TWAP window will be set to 30 minutes, as this achieves the best 
 Full range liquidity is a strong deterrent against oracle manipulations. Even just a small amount of full range liquidity is enough to drive up the costs to manipulate a TWAP oracle significantly.<sup>3</sup> This example of IDLE/WETH from [Euler](https://docs.euler.finance/euler-protocol/getting-started/methodology/oracle-rating#how-to-improve-the-oracle-rating) shows $52k of wide range liquidity would incur a minimum cost of attack of $115m. It will be in Kwenta's best interest to incentivize full range liquidity for pairs with perpetual markets built on top. 
 
 ### Scalability and Future Research
-
-#### Uniswap LP Vault
-
-The end goal for liquidity provisioning will be a hybrid between the stablecoin vault and Uniswap full range LP vault -- if not fully the latter. The full range LP vault would enable liquidity providers to deposit, for example, WETH/USDC full range liquidity to the mechanism. As the platform grows, the side effect is that liquidity deepens on the Uniswap for a given asset pair making the oracle more tamper resistant.
-
-With a more robust price oracle we can continue to lower the TWAP window essentially reducing the spread as the system scales and create more efficient markets. 
 
 #### Harmonic Liquidity Based Slippage
 
