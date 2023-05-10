@@ -38,6 +38,8 @@ This structure enables CCs to propose/verify changes necessary in a flexible man
 
 Because of the responsibility held by those on this multisig there is an expectation that all members (even individual signers of adminDAO and EC) must be available within 24 hours in the event the system needs to be paused or an emergency upgrade needs to be undertaken.
 
+In the event a signer is found to be unvailable for 24 hours (without prior notice) it is the remaining members discretion to replace this signer moving forward. This also applies the multsig signers (adminDAO and EC). Therefore, it is the responsibility of these organizations to gather the necessary signatures from their respective signing members or risk protocol ownership rights being revoked.
+
 ## Copyright
 
 Copyright and related rights waived via [CC0](https://creativecommons.org/publicdomain/zero/1.0/).
