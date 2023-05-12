@@ -18,34 +18,42 @@ TWAP Perpetuals will enable Kwenta to scale its trading experience to other chai
 
 Currently perpetual futures are offered on Optimism and are powered by Synthetix. Kwenta cannot capture markets on other chains unless an integration partner is available on other chains. Creating a perpetuals mechanism built on top of AMMs as widespread as Uniswap removes the bounds to where traders can trade with Kwenta. 
 
-Not only that, in the current state of Synthetix Perps V2, the mechanism is only viable for traders using the delayed order mechanism. This creates issues for protocols that want to combine perpetual futures into other products. Because trades cannot be executed atomically (at a reasonable cost) products like permissionless funding rate arbitrage vaults or onchain social trading strategies cannot be created. 
+Secondly, fees are typically used to protect liqudity providers which can drive up costs for traders when a mechanism is inefficient at mitigating risk. By creating a mechanism that erases risk for LPs, Kwenta can offer a lower fee trading experience where fees are the cost of attracting passive liqudity providers seeking a low risk return.
 
-In the long run, the scalability of this mechanism is limitless and a perpetual market can be deployed for any long tail asset given sufficient liquidity. 
+Lastly, in the current state of Synthetix Perps V2, the mechanism is only viable for traders using the delayed order mechanism. This creates issues for protocols that want to combine perpetual futures into other products. Because trades cannot be executed atomically (at a reasonable cost) products like permissionless funding rate arbitrage vaults or onchain social trading strategies cannot be created.
+
+In theory, the scalability of this mechanism is limitless and a perpetual market can be deployed for any long tail asset given sufficient liquidity. 
 
 ## Specification
 
 The first phase of this task will be to build an MVP that tests the viability of this mechanism and will focus primarily on ETH -- as it is the deepest market available on most Ethereum based chains. 
 
-It's important to note that because the oracle is fully onchain, this mechanism can be used atomically and is composable with other protocols. 
+The initial deploy will be on Arbitrum because Optimism currently creates a new block for each transaction. This drastically decreases the cost to manipulate a TWAP oracle. Building on Optimism is not feasible until Optimism Bedrock which introduces block times. 
 
 ### Spread Based Pricing
 
-At all times there will be two available price feeds for trading. The first is the 30 minute TWAP window price and the second is the current spot price. We can create a price spread by executing orders at the "worst" price of the two. For example, if the current ETH price is $1730 and the TWAP price is $1700 a long position will be executed at $1730 and short position is executed at $1700. 
+At all times there will be two price feeds for trading. The first is the 30 minute TWAP window price and the second is the current spot price. By executing orders at the "worst" price of the two, we create a **price spread**. 
+
+> For example, if the current ETH price is $1730 and the TWAP price is $1700 a long position will be executed at $1730 and short position is executed at $1700. 
+
+By providing pricing as a spread we can offer trading at a low fee cost. The reason we use the worst of the two price feeds is to protect against latency arbitrage when the two feeds diverge. The spread purely serves as a protection mechanism when markets are volatile. Any profit opportunity from exploiting the lagging oracle is effectively neutralized. This decreases the risk for liquidity providers and because of this there is no need to scale fees to protect the mechanism. Therefore, the remainder of any fees charged is whatever is enough to attract liquidity.
 
 ![Spread Chart](../../images/kip-74-spread.png)
-*Example of price spread over 3 hours. At selected block, longs would executed at $1,709 and shorts would executed at $1685. Meaning if you instantaneously opened and closed this position you would be at a loss.*
+*Example of price spread over 3 hours. At selected block, longs would executed at $1,709 and shorts would executed at $1685. Meaning if you instantaneously opened and closed this position you would be at a loss. However, this is similar to any order book exchange with a bid-ask spread.*
 
-The reason we use the worst of the two price feeds is to protect against latency arbitrage when the two feeds diverge. The spread purely serves as a protection mechanism when markets are gapping up or gapping down. Any profit opportunity from exploiting the lagging oracle is effectively neutralized. 
+All order book based exchanges have a bid-ask spread. This spread is typically a function of liquidity - the more liquidity there is, the smaller the spread (also hence the need for market makers). To offer derivatives onchain without pricing liquidity is futile. The TWAP spread mimics a bid-ask spread onchain and can also be a function of liquidity (see next section). In theory, we should be able to use liqudity to eventually lower the TWAP window, decrease the spread, and create a more efficient trading system.
 
-The closer the spot price is to the TWAP price the narrower the spread. Typically the spread will be the greatest during volatile trading sessions and almost zero during flat or quiet sessions, enabling low fee entry/exits. As the system grows and liquidity increases for given pairs, we will explore lowering the TWAP window, reducing the overall spread. 
+It's also important to note that because the oracle is fully onchain, this mechanism can be used atomically and is composable with other protocols. 
 
-### Counterparty Liquidity Provisioning
+### Liquidity Provisioning
 
 The initial model for liquidity will be a stable vault of either USDC, DAI, or a stablecoin native to the deployed chain. This simplifies the initial implementation and allows profits or losses to easily be settled in USD.
 
 > Synthetix V3 will provide a way to bootstrap pools of liquidity for protocols building financial derivatives. It is possible to build TWAP Perps as an SNXv3 "Market" as the mechanism can function agnostic of the base liquidity pool. This avenue can be explored if V3 permissionless pools are ready before our MVP.
 
-In the future we'd like to explore depositing this liquidity into Uniswap V3 positions. This would allow us to strengthen the TWAP oracle for illiquid pairs. See *Scalability and Future Research* for more details.
+A percentage (if not initially 100%) of this liquidity will be wrapped and deposited into Uniswap V3 as a full range liquidity position. This not only provides extra yield for LPs, but is essential to deepening the liquidity of a pair and strengthening its oracle. Therefore oracle robustness becomes a function of system liquidity and as more traders trade, more liquidity enters the system, and the mechanism becomes more resistant to manipulation. The more resistant it is to manipulation the more we can decrease the spread and attract more traders.
+
+If this liquidity growth and scaling model works for ETH/USD, it can be scaled scaled to other asset pairs that may be more illiquid.
 
 ### Oracle & Manipulation Resistance
 
@@ -61,11 +69,9 @@ Full range liquidity is a strong deterrent against oracle manipulations. Even ju
 
 ### Scalability and Future Research
 
-#### Uniswap LP Vault
+#### Harmonic Liquidity Based Slippage
 
-The end goal for liquidity provisioning will be a hybrid between the stablecoin vault and Uniswap full range LP vault -- if not fully the latter. The full range LP vault would enable liquidity providers to deposit, for example, WETH/USDC full range liquidity to the mechanism. As the platform grows, the side effect is that liquidity deepens on the Uniswap for a given asset pair making the oracle more tamper resistant.
-
-With a more robust price oracle we can continue to lower the TWAP window essentially reducing the spread as the system scales and create more efficient markets. 
+#### N-1 Arbitrage Risk
 
 ## References
 
