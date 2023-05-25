@@ -16,7 +16,7 @@ The Optimism Bedrock upgrade is planned for 16:00 UTC on June 6, 2023, including
 
 ## Motivation
 
-To dinsincentivize traders to trade during the epoch of the scheduled Optimism upgrade and respective expected downtime, the $OP trading rewards program should be paused for one epoch.
+To disincentivize traders to trade during the epoch of the scheduled Optimism upgrade and respective expected downtime, the $OP trading rewards program should be paused for one epoch.
 
 ## Specification
 
