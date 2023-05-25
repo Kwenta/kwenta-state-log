@@ -20,7 +20,9 @@ To disincentivize traders to trade during the epoch of the scheduled Optimism up
 
 ## Specification
 
-Pause the Kwenta $OP trading rewards program for epoch 6. This means that any trades made on Kwenta during epoch 6 will not receive $OP trading rewards.
+- Pause the Kwenta $OP trading rewards program for epoch 6. This means that any trades made on Kwenta during epoch 6 will not receive $OP trading rewards.
+
+- The $OP rewards program will be extended for one week to make up for the missed $OP rewards in epoch 6.
 
 ## Copyright
 
