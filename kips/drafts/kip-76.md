@@ -1,7 +1,7 @@
 ---
 kip: 76
 title: protocolDAO
-status: Draft
+status: Approved
 created: 2023-05-09
 section: TBD
 ---

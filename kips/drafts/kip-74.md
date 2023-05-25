@@ -1,7 +1,7 @@
 ---
 kip: 74
 title: TWAP Perpetuals
-status: Draft
+status: Approved
 author: Jeremy (@JChiaramonte7)
 created: 2022-04-19
 ---

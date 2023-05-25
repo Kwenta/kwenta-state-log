@@ -1,7 +1,7 @@
 ---
 kip: 75
 title: Accumulate Vest Penalty Rewards Prior to Staking V2 Launch
-status: Draft
+status: Approved
 created: 2023-04-19
 section: adjusts kip-45
 ---

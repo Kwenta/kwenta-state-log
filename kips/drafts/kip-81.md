@@ -1,7 +1,7 @@
 ---
 kip: 81
 title: adminDAO funding
-status: draft
+status: Draft
 created: 2023-05-19
 section: 2.5
 ---

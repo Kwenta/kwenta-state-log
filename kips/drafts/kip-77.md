@@ -1,7 +1,7 @@
 ---
 kip: 77
 title: Make Staking V2 Upgradeable
-status: draft
+status: Draft
 created: 2023-05-17
 ---
 

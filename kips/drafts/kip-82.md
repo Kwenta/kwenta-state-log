@@ -1,7 +1,7 @@
 ---
 kip: 82
 title: Pause $OP rewards during Bedrock Upgrade
-status: draft
+status: Draft
 created: 2023-05-25
 section: 5
 ---
