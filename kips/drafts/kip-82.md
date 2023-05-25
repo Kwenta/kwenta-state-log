@@ -12,7 +12,7 @@ Pause the Kwenta $OP trading rewards program for one epoch due to the scheduled 
 
 ## Abstract
 
-The Optimism Bedrock upgrade is planned for 16:00 UTC on June 6, 2023, including approx. 4 hours of network downtime. Beginning on June 4th at 16:00 UTC, Synthetix Perps V2 will be limited to closing only for the 48 hours leading up to the scheduled upgrade. The $OP trading rewards should be paused to facilitiate the planned downtime.
+The Optimism Bedrock upgrade is planned for 16:00 UTC on June 6, 2023, including approx. 4 hours of network downtime. Beginning on June 4th at 16:00 UTC, Synthetix Perps V2 will be limited to closing only for the 48 hours leading up to the scheduled upgrade. The $OP trading rewards should be paused to facilitate the planned downtime.
 
 ## Motivation
 
