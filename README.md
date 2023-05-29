@@ -2,22 +2,26 @@
 
 The Kwenta State Log (KSL) is a living document which defines the state of Kwenta. Amendments and additions can be made to the KSL via a Kwenta Improvement Proposal (KIP).
 
-To propose a KIP to the Kwenta State Log, use the [KIP-0 template](./templates/kip-0.md). For more information, see [KIP workflow](./sections/1.md#kip-workflow).
+The decentralized frontend is available at [gov.kwenta.eth.limo](https://gov.kwenta.eth.limo).
 
-KIPs currently up for discussion can be found in the [drafts folder](./kips/drafts/).
+ENS link: [gov.kwenta.eth](https://app.ens.domains/name/gov.kwenta.eth)
 
-# Table of Content
-
-1. [State Log Purpose and Guidelines](./sections/1.md)
-2. [Kwenta Governance Framework](./sections/2.md)
-3. [Tokenomics](./sections/3.md)
-4. [Product](./sections/4.md)
-5. [Initiatives](./sections/5.md)
-6. [KTR Requests](./sections/6.md)
-7. [Legal](./sections/7.md)
+Implemented and rejected KIPs can be found in the `/kips/` folder. Templates for CKIPs and KTRs can be found in the `/templates` folder.
 
 # Copyright
 
-Copyright and related rights waived via [CC0](https://creativecommons.org/publicdomain/zero/1.0/).
+Copyright and related rights waived via [CC0](https://creativecommons.org/publicdomain/zero/1.0/) for all content (KIPs and Kwenta State Log).
 
-> This document was last edited on Apr 23, 2023. Based on work by different members of the Kwenta community.
+# Development
+
+### Install dependencies
+
+`npm install`
+
+### Run
+
+`npm run dev`
+
+## Contact
+
+Join the community on the [Kwenta Discord server](https://discord.gg/kwentaio)!
