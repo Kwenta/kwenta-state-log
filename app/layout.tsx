@@ -16,13 +16,13 @@ export default function RootLayout({
       <div className="flex flex-row border-b-2 border-yellow-800 pb-4 pr-8 pt-8">
         <div className="basis-1/2">
           <Link href="/">
-            <h1 className="font-mono text-3xl text-black">Kwenta State Log</h1>
+            <h1 className="font-mono md:text-3xl text-black text-lg">Kwenta State Log</h1>
           </Link>
-          <p className="font-mono text-black">
+          <p className="font-mono text-black text-xs md:text-base">
             A living document defining the state of Kwenta
           </p>
         </div>
-        <div className="basis-1/2">
+        <div className="basis-1/2 text-sm md:text-base">
           <p className="text-right font-mono text-black hover:underline">
             <Link className="space-x-3" href="/">
               Kwenta State Log
