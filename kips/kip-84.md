@@ -42,9 +42,11 @@ The referral program aims to utilize the existing $KWENTA trading rewards mechan
 
 ### Rewards Calculations
 
-- rewards_score calculation: rewards_score = fees_paid^a * (staked_KWENTA+0.1)^1-a
-- final_score calculation for a trader: final_score = rewards_score + (rewards_score * boost) + Σbonus
-- referral_score calculation for an issuer: referral_score = staked_KWENTA + nftScore
+- rewards_score calculation: `rewards_score = fees_paid^a * (staked_KWENTA+0.1)^1-a`
+- final_score calculation for a trader: `final_score = rewards_score + (rewards_score * boost) + Σbonus`
+- referral_score calculation for an issuer: `referral_score = staked_KWENTA + nftScore`
+
+`a` is a configurable value currently set to `0.7` under KIP-3, the Cobb-Douglas function defining the weighting between fees_paid and staked_KWENTA.
 
 ### Technical Specifications
 
