@@ -9,7 +9,14 @@ const PostPreview = (props: KipMetadata) => {
           KIP-{props.kip}: {props.title}
         </h2>
       </Link>
-      <p className="font-thin">Status: {props.status}</p>
+      <div className="font-thin">
+        Status: {props.status}
+        {props.snapshot && (
+          <p>
+            Vote: <Link href={`${props.snapshot}`} className="hover:underline">Snapshot</Link>
+          </p>
+        )}
+      </div>
     </div>
   );
 };

@@ -4,4 +4,5 @@ export interface KipMetadata {
   status: string;
   created: string;
   slug: string;
+  snapshot: string;
 }
