@@ -1,0 +1,45 @@
+---
+kip: 86
+title: Staking V2 Integrator Contract Support
+status: draft
+created: 2023-07-04
+---
+
+## Simple Summary
+
+Staking V2 has been engineered so that the community will continue to receive rewards for their V1 locked escrow.
+
+However in order for this intention to be fully fulfilled, Staking V2 also needs to support Staking V1 contract stakers (community members who staked their escrow via a smart contract).
+
+This KIP ensures that individuals who staked in V1 via contract will also be rewarded in V2 for their locked V1 stake.
+
+## Abstract
+
+This change will add a new interface and functions that allow community members to claim V2 rewards for their V1 locked escrow.
+
+This will allow integrators and any other community member who has staked via a contract to claim their V2 rewards in the same way EOA stakers can.
+
+## Motivation
+
+The decision was made when designing Staking V2 that we should do the best possible within engineering constraints to ensure that no users unfairly lose rewards due to the migration.
+
+Hence Staking V2 was designed to provide rewards for funds locked in immutable V1 contracts that cannot be migrated.
+
+The system is already engineered to support this for EOAs, but without this change, users who have staked via smart contract will miss out.
+
+This KIP will ensure everyone in the community is treated equally.
+
+## Specification
+
+Add a new `IStakingRewardsV2Integrator` that requires integrators to use `beneficiary` function. This will return the address of the beneficiary of the smart contract.
+
+The following functions will be added:
+- `getIntegratorReward`
+- `getIntegratorAndSenderReward`
+- `getIntegratorRewardAndCompound`
+
+These functions will allow the `beneficiary` account to claim rewards on behalf of the integrator, and to compound those rewards.
+
+## Copyright
+
+Copyright and related rights waived via [CC0](https://creativecommons.org/publicdomain/zero/1.0/).
