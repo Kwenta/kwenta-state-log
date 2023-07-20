@@ -24,7 +24,7 @@ const KipDraft = (props: any) => {
   return (
     <div>
       <meta property="og:title" content={`KIP-${post.data.kip}: ${post.data.title}`}/>
-			<meta property="og:description" content={post.content.split("## Abstract")[0]} />
+			<meta property="og:description" content={post.content.split("## Abstract")[0].split("##")[1]} />
       <article className="prose max-w-none font-mono prose-code:text-yellow-800 prose-pre:bg-gray-100">
         <h1 className="pt-4">
           KIP-{post.data.kip}: {post.data.title}
