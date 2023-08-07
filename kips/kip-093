@@ -10,10 +10,10 @@ Kwenta will shift POL to Velodrome to capture VELO emissions each week, grow Kwe
 
 ## Abstract
 This proposal aims to change the KWENTA/WETH Protocol Owned Liquidity (POL) in the following ways:
-Move KWENTA’s Protocol Owned Liquidity (POL) from Arrakis to Velodrome.
-Use KWENTA’s veNFT to vote for the KWENTA/WETH pool.
-Compound the VELO emissions from the POL into the KWENTA veNFT, increasing the share of bribes it receives every week.
-Compound the WETH/KWENTA fees & bribes in the POL on Velodrome.
+- Move KWENTA’s Protocol Owned Liquidity (POL) from Arrakis to Velodrome.
+- Use KWENTA’s veNFT to vote for the KWENTA/WETH pool.
+- Compound the VELO emissions from the POL into the KWENTA veNFT, increasing the share of bribes it receives every week.
+- Compound the WETH/KWENTA fees & bribes in the POL on Velodrome.
 
 ## Motivation
 Velodrome is an optimal platform for Kwenta to create a sustainable liquidity incentive program. Protocols can lock veVELO or deposit incentives to attract veVELO votes to direct VELO emissions to their liquidity pools. Protocols often direct 2-3X as much value in VELO as they deposit in incentives. 
