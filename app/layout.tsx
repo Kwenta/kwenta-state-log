@@ -97,7 +97,7 @@ export default function RootLayout({
         >
           CC0
         </Link>
-        . This document was last edited on August 15, 2023. Based on work by
+        . This document was last edited on August 30, 2023. Based on work by
         different members of the Kwenta community.
       </div>
     </footer>
