@@ -22,11 +22,9 @@ const Section = (props: any) => {
   const slug = props.params.slug;
   const post = getSectionContent(slug);
   return (
-    <p>
-      <article className="prose m-4 max-w-none font-mono prose-h1:mb-1">
-        <Markdown>{post.content}</Markdown>
-      </article>
-    </p>
+    <article className="prose dark:prose-invert m-4 max-w-none font-mono prose-h1:mb-1">
+      <Markdown>{post.content}</Markdown>
+    </article>
   );
 };
 
