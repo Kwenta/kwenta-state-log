@@ -1,0 +1,28 @@
+---
+kip: 95
+title: Kwenta V3 Pool
+status: Draft
+created: 2023-09-04
+section: <#>
+---
+
+## Summary
+Redirect SNX received from Synthetix Perps volume rewards towards a V3 pool.
+
+## Abstract
+Kwenta currently receives 5% of fees generated in the form of SNX from the Synthetix Treasury monthly. The Kwenta treasury holds 165,328.75 SNX (~ roughly $350k) at the time of writing. This proposal signals intent to set up a pool on Synthetix V3 and deposit current and future received SNX in it. There exists a respective SCCP. 
+
+## Motivation
+Kwenta's SNX is currently sitting idle in the treasury. It's in our best interest to utilize this on Synthetix V3 -- not only to generate extra revenue for the DAO but to increase available liquidity for Perps V3 with the impending launch.
+
+Growing our own liquidity on Synthetix V3 benefits our perpetuals offering over the long run but also enables Kwenta with in-house liquidity to bootstrap new markets or derivatives built on Synthetix V3.
+
+## Specification
+Currently, 10% of all SNX rewards are earmarked for the Risk Protection Fund (KIP-83) if the fund's value falls below $100,000 sUSD. Once this allocation is made, the remainder will be used towards the Kwenta V3 pool.
+- Deploy a Synthetix V3 Pool
+- Present SCCP to onboard Kwenta pool
+- Deposit all of current SNX into Kwenta pool
+- Allocate funds to Perps V3 market (when available)
+
+## Copyright
+Copyright and related rights waived via CC0.
