@@ -17,6 +17,13 @@ const PostPreview = (props: KipMetadata) => {
           </p>
         )}
       </div>
+      <div className="font-thin">
+      {props.sponsor && (
+          <p>
+            Sponsor: {props.sponsor}
+          </p>
+      )}
+      </div>
     </div>
   );
 };

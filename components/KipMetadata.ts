@@ -5,4 +5,5 @@ export interface KipMetadata {
   created: string;
   slug: string;
   snapshot: string;
+  sponsor: string;
 }
