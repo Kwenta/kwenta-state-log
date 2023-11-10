@@ -18,7 +18,8 @@ const getKipMetadata = (): KipMetadata[] => {
       status: matterResult.data.status,
       created: matterResult.data.created,
       slug: fileName.replace(".md", ""),
-      snapshot: matterResult.data.snapshot
+      snapshot: matterResult.data.snapshot,
+      sponsor: matterResult.data.sponsor
     };
   });
 
