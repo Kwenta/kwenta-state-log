@@ -1,0 +1,35 @@
+---
+kip: 115
+title: Reduce Staking Cooldown
+status: Draft
+created: 2024-01-03
+section: 
+snapshot:
+---
+
+## Simple Summary
+This KIP proposes changing the staking cooldown period in Kwenta from 14 days to 7 days, enhancing liquidity and user flexibility.
+
+## Abstract
+The proposed adjustment will modify the staking cooldown mechanism within the Kwenta protocol. This change aims to provide a balance between maintaining secure governance and offering users greater agility in managing their staked assets.
+
+## Motivation
+The existing 14-day cooldown is a preventive measure against voting manipulation but is overly restrictive for users needing quick access to their assets in a volatile market. Reducing the cooldown to 7 days aligns with the need for both responsive liquidity and reliable governance.
+    
+## Specification
+1. Upgrade `StakingRewardsV2` implementation so that the immutable `MIN_COOLDOWN_PERIOD` variable is reduced from `1 weeks` to `0`.
+2. Call the `StakingRewardsV2.setCooldownPeriod(uint256 _cooldownPeriod)` function with `7 day`.
+
+## Technical Notes
+Currently the cooldown period is adjustable via the `StakingRewardsV2.setCooldownPeriod` function. However it can only be set between the bounds of the `MIN_COOLDOWN_PERIOD` and `MAX_COOLDOWN_PERIOD` defined in that contract. Currently those values are set at `1 week` and `52 weeks` respectively:
+```
+    uint256 public constant MIN_COOLDOWN_PERIOD = 1 weeks;
+    uint256 public constant MAX_COOLDOWN_PERIOD = 52 weeks;
+```
+Due to the limitation of the `MIN_COOLDOWN_PERIOD`, we can only reduce the cooldown period to a minimum of `1 week` via the `setCooldownPeriod` function with the current smart contract implementation. In order to reduce the cooldown period further, it requires a smart contract upgrade to change the value of `MIN_COOLDOWN_PERIOD`. Thankfully this is an extremely trivial smart contract upgrade - about as simple as it gets.
+
+## Parameter Change Summary
+We would make the following two parameter changes:
+- `MIN_COOLDOWN_PERIOD` goes from `1 week` to `0`
+- `cooldownPeriod` goes from `2 weeks` to `1 week`
+The argument for `0` for `MIN_COOLDOWN_PERIOD` is that it provides the maximum amount of flexibility, and the value can be safely set to `0` as a way of totally turning the cooldown off if we ever want to. The reasoning behind `1 week` for the cooldown period is described above in the KIP Motivation section.
