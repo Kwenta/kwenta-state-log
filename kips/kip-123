@@ -1,0 +1,79 @@
+---
+kip: 123
+title: Launch $KSX
+status: draft
+created: 2024-04-08
+section: 3
+---
+
+## Simple Summary
+This KIP introduces the $KSX token, a liquid staking derivative of KWENTA, designed to simplify the staking process and offer greater flexibility and utility for KWENTA stakers.
+
+The $KSX Phase 1 strategy will involve implementing a publicly callable function to claim staked $KWENTA rewards in the position backing KSX, as well as compound $USDC rewards back into the $KWENTA token through purchasing and staking $KWENTA using these rewards.
+
+$KSX will be upgradable to allow future changes to the staking strategy and composition of the backing tokens.
+
+## Abstract
+This proposal introduces the $KSX token as a liquid staking derivative within the KWENTA ecosystem, aimed at enhancing the staking experience by simplifying processes and increasing the utility and flexibility for KWENTA stakers.
+
+
+The core of the $KSX wrapper contract is a mechanism for the claiming of $KWENTA staking rewards and the compounding of these rewards through the purchase and staking of additional $KWENTA as well as claiming and reinvesting $USDC rewards back into $KWENTA.
+
+
+$KSX is upgradable, accommodating future modifications to staking strategies and the composition of backing assets. Upgradability ensures the ability to modify the staking strategy as well as implement additional token accumulation or staking strategies in future phases.
+
+
+This proposal establishes both minting $KSX through locking $KWENTA, as well as burning $KSX to unlock $KWENTA to ensure redeemability in both directions as well as changes in governance to grant power to $KSX holders.
+
+
+## Motivation
+The $KWENTA token began as a token which was primarily focused on rewarding early loyalty at the cost of passive or inactive holders. The mechanism by which the $KWENTA token did this was through inflation, allowing users who staked, frequently compounded, and traded on Kwenta to maximize their share of the token supply. While this flywheel was successful in many ways at fostering a dedicated early community, there were some tradeoffs to this system. As Kwenta matures there should be a shift of priorities to accomplish a new set of goals. Advantages for this new model as Kwenta matures include:
+
+1. Broader Distribution and Inclusivity: KSX aims to foster a wider token distribution, encouraging a larger and more diverse community by making staking and participation more accessible and less complex.
+
+2. Support for Liquidity Provision and Market Making: By addressing the imbalance between LP incentive yield and inflation, KSX makes it more financially viable for liquidity providers and market makers to participate, contributing to a healthier and more liquid market.
+
+3. Simplified Reward System: The complexity of the escrow system and the deterrent effect of long lockup periods are addressed with KSX, aiming for a straightforward and more attractive reward system that could lead to greater engagement and satisfaction among holders.
+
+4. Cross-Chain Compatibility: Removing barriers for holding $KWENTA tokens outside of Optimism, KSX facilitates a multichain presence, making it easier for the token to be adopted and utilized across different blockchain ecosystems.
+
+5. Direct Benefits from Protocol Growth: KSX holders directly benefit from the protocol's growth through a system that reinvests staking rewards and compounds value within the ecosystem, aligning the interests of holders with the long-term success of Kwenta.
+
+6. Branding Alignment: An opportunity to build on and expand Kwenta’s brand into something larger, reflecting the larger vision for the DAO.
+
+7. Avoiding disruption of $KWENTA staking: While increasing $KSX participation removes inflation from the market and provides benefits in the form of buybacks, these benefits can be realized without retracting any popular policies such as $USDC staking rewards. This all-carrot-no-stick approach provides a directly democratic method of adjusting tokenomics, allowing stakers to choose their own strategy.
+
+## Specification
+
+### Minting and Ratio
+The first $KSX is minted by depositing $KWENTA at an initial fixed ratio of 1,000 $KSX per $KWENTA. 
+
+Subsequent minting adjusts based on the total $KSX supply and $KWENTA balance. All new KSX is minted at a ratio of X/Y where X is the total supply of $KSX, and Y is the total amount of $KWENTA in the pool.
+
+### Staking Management and Rewards
+The $KSX contract should allow any address to initiate claiming and compounding inflationary $KWENTA rewards.
+
+The $KSX contract should allow any address to claim USDC. A public function enables the swapping of USDC for $KWENTA, integrating these rewards back into the $KSX contract for staking and compounding.
+
+### Redeemability
+$KSX can be burned to unstake and withdraw a proportional amount of $KWENTA from the contract. Only claimed, staked $KWENTA may be withdrawn this way. 
+
+### Upgradability and Future Expansion
+The contract should be upgradable, allowing for the incorporation of additional assets and adjustments to the $KSX token model to support the protocol's growth and evolution.
+
+### Removal of Escrow and Staking Cooldown
+All newly issued rewards from inflation will be issued as non-escrowed. This ensures all rewards directed at the $KSX contract are immediately redeemable by burning $KSX.
+
+Staking cooldown will be set to 0. This ensures proper functioning of the redeemability mechanism.
+
+### Governance
+Unlocked KSX will be enabled for voting across all enabled chains at a rate of 800 $KSX to 1 $KWENTA, giving $KSX holders their first benefit in the form of increased governance power.
+
+While it may be possible to gain governance power through buying KSX immediately before a governance snapshot and voting immediately after, it’s unlikely this attack would benefit the holder since the KwentaDAO’s council system has structural checks and balances against such an attack. First, an attacker may have some difficulty finding enough liquidity to gain a majority of council seats, thus limiting the possibility of even attempting such an attack. Second, if an attacker were able to purchase an amount of $KSX sufficient for such an attack, Kwenta Council does not directly deploy code, and therefore would not be a possible attack vector for injecting malicious code or implementing egregious governance policies which require active development or updates to any aspect of Kwenta itself. Given these limitations, it is unlikely an attacker would take the necessary risk to attack Kwenta governance without the intention of long term participation and collaboration.
+
+## Rationale
+The sum of changes to the $KWENTA staking mechanism, implementation of a tokenized staking strategy, and governance support for the new $KSX token create a simple UX for new participants in the Kwenta ecosystem. With minimal disruption to existing stakers and no need to repeal or change the existing, approved USDC staking rewards, $KSX aims to become the dominant form of $KWENTA staking simply by offering the most attractive strategy and feature set to holders by allowing them to provide liquidity, bridge across multiple chains, or utilize tokens in tip bots or other novel use cases without sacrificing exposure to the benefits of staking rewards.
+
+The $KSX strategy also ensures more frequent compounding for users who manually stake, previously only available to those who build compounding bots, or manually interact with staking more often. Since there is no systemic benefit to rewarding those particular users more, it seems unnecessary to penalize those who prefer to stake and interact with their tokens less often.
+
+Finally, the $KWENTA buyback mechanism will direct protocol revenue toward providing buy pressure to the $KWENTA token, ensuring steady volume for LPs. This mechanism should help deepen liquidity, and reward the most aligned individuals with easy access to a strategy which aggressively accumulates $KWENTA rather than directing revenue outside the ecosystem. While buyback mechanisms have been criticized by community members in the past, the opt-in nature of the $KSX strategy ensures these community members are still able to participate in $KWENTA staking in whichever way they prefer, greatly reducing the possibility of a tangible negative reaction to the buyback strategy. If you like staking how it is, keep staking!
