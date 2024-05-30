@@ -1,0 +1,18 @@
+---
+ktr: 16
+title: Milestone Incentives
+status: Draft
+created: 2024-05-30
+---
+
+## Summary
+Issue the adminDAO a one-time $SNX grant to continue incentivizing milestone completions by core contributors.
+
+## Request
+The adminDAO requests `10,000` SNX from the treasuryDAO.
+
+## Address
+`oeth:0xF510a2Ff7e9DD7e18629137adA4eb56B9c13E885`
+
+## Rationale
+We are requesting 10,000 SNX to be issued to the adminDAO to for distribution (not all at once) to core contributors upon the completion of development milestones.
