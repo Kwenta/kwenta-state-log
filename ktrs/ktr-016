@@ -15,4 +15,4 @@ The adminDAO requests `10,000` SNX from the treasuryDAO.
 `oeth:0xF510a2Ff7e9DD7e18629137adA4eb56B9c13E885`
 
 ## Rationale
-We are requesting 10,000 SNX to be issued to the adminDAO to for distribution (not all at once) to core contributors upon the completion of development milestones.
+We are requesting 10,000 SNX to be issued to the Kwenta adminDAO for distribution (not all at once) to core contributors upon the completion of development milestones.
