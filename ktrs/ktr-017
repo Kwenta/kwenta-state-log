@@ -1,0 +1,36 @@
+---
+ktr: 17
+title: adminDAO Budget July 24 - December 24
+status: draft
+created: 2023-12-08
+---
+
+## Summary
+
+To ensure smooth continuity, we proposed that the current core contributors/adminDAO be allotted a sum of 1,530,000 in stables from the Kwenta treasuryDAO.
+
+## Request
+
+| EXPENSE CATEGORY         | July        | August        | September      | october   | November     | December    | Totals        |
+| ------------------------ | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
+| Development Grants       | $162,287.14 | $162,287.14 | $162,287.14 | $162,287.14 | $162,287.14 | $162,287.14 | $973,722.84 |
+| Future Talent            | $25,000.00  | $25,000.00  | $25,000.00  | $25,000.00  | $25,000.00  | $25,000.00  | $150,000.00 |
+| Marketing                | $8,333.00  | $8,333.00   | $8,333.00   | $8,333.00   | $8,333.00   | $8,333.00   | $49,998.00  |
+| Misc                     |             |             |             |             |             |             | $100,000.00 |
+| Other Infastructure      | $9,765.33   | $9,765.33   | $9,765.33   | $9,765.33  | $9,765.33  | $9,765.33   | $58,592.00  |
+| Smart Contract Audits    | $25,000.00  | $25,000.00  | $25,000.00  | $25,000.00  | $25,000.00  | $25,000.00  | $150,000.00  |
+| **Total per month**      | **$225,589.61** | **$225,589.61** | **$225,589.61** | **$225,589.61** | **$225,589.61** | **$225,589.61** | **$1,503,535.68** |
+
+Note: The adminDAO operated below its budget in the last epoch, requesting $1,530,000 but spending only $1,130,000. This resulted in a surplus of approximately $400,000 in stablecoin. Consequently, we are adjusting our funding request downward by an equivalent amount, bringing our total request for the current period to $1,003,535.68.
+
+## Address
+
+`0xF510a2Ff7e9DD7e18629137adA4eb56B9c13E885`
+
+## Rationale
+
+Considering our current annual expenditure rate of approximately $3 million, this provision will support ongoing development for the next six months, after which additional funding will be necessary. The projected expenses for this period are detailed within this KTR.
+
+## Copyright
+
+Copyright and related rights waived via [CC0](https://creativecommons.org/publicdomain/zero/1.0/).
