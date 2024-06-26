@@ -1,0 +1,36 @@
+---
+ktr: 17
+title: adminDAO Budget July 24 - December 24
+status: draft
+created: 2023-12-08
+---
+
+## Summary
+
+To ensure smooth continuity, we proposed that the current core contributors/adminDAO be allotted a sum of 1,530,000 in stables from the Kwenta treasuryDAO.
+
+## Request
+
+| EXPENSE CATEGORY         | July        | August        | September      | october   | November     | December    | Totals        |
+| ------------------------ | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
+| Development Grants       | $162,287.14 | $162,287.14 | $162,287.14 | $162,287.14 | $162,287.14 | $162,287.14 | $973,722.84 |
+| Future Talent            | $25,000.00  | $25,000.00  | $25,000.00  | $25,000.00  | $25,000.00  | $25,000.00  | $150,000.00 |
+| Marketing                | $8,333.00  | $8,333.00   | $8,333.00   | $8,333.00   | $8,333.00   | $8,333.00   | $49,998.00  |
+| Misc                     |             |             |             |             |             |             | $100,000.00 |
+| Other Infastructure      | $9,765.33   | $9,765.33   | $9,765.33   | $9,765.33  | $9,765.33  | $9,765.33   | $58,592.00  |
+| Smart Contract Audits    | $25,000.00  | $25,000.00  | $25,000.00  | $25,000.00  | $25,000.00  | $25,000.00  | $150,000.00  |
+| **Total per month**      | **$225,589.61** | **$225,589.61** | **$225,589.61** | **$225,589.61** | **$225,589.61** | **$225,589.61** | **$1,503,535.68** |
+
+Note: The adminDAO spent under budget last epoch requesting $1,530,000 and only spending 1,130,000 thus carrying over a ~$400,000 stable coin balance. Thus we are reducing our overall ask by equally as much bringing our total ask to $1,003,535.68.
+
+## Address
+
+`0xF510a2Ff7e9DD7e18629137adA4eb56B9c13E885`
+
+## Rationale
+
+Considering the current yearly expenditure rate of approximately $3M this provision will facilitate continued development for a period of six months prior to the need for additional funding. The expected expenses for the next 6 months are outlined within this KTR.
+
+## Copyright
+
+Copyright and related rights waived via [CC0](https://creativecommons.org/publicdomain/zero/1.0/).
