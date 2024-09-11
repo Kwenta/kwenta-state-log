@@ -1,0 +1,29 @@
+---
+kip: 136
+title: Add Twitter X Pixel to Track Ad Campaign Success
+status: Draft
+created: 2024-09-09
+---
+
+## Simple Summary
+
+Add the Twitter X Pixel to the Kwenta website to track the performance of future Twitter ad campaigns.
+
+## Abstract
+
+This proposal aims to integrate the Twitter X Pixel into the Kwenta website to track user behavior and conversion metrics from ad campaigns on Twitter. The pixel will provide insights into campaign performance and allow for better optimization of future marketing efforts, while ensuring only anonymized data is collected and shared strategic partners like Synthetix.
+
+## Motivation
+
+As Kwenta increases its marketing efforts on Twitter, there is a need to accurately measure the success of these campaigns. By integrating the Twitter X Pixel, Kwenta will gain valuable data on user engagement and conversions, enabling more targeted ad campaigns and effective allocation of marketing resources.
+## Specification
+
+- The Twitter X Pixel will be integrated into all key user interaction points on the Kwenta website, such as the homepage, trade page, and any other relevant sections where conversions can occur.
+- The pixel will track metrics such as page visits, clicks, signups, and trades attributed to Twitter ads.
+- Data collected will be anonymized and used to assess campaign effectiveness, guiding future marketing strategies.
+
+Implementation steps:
+1. Obtain the Twitter X Pixel from Twitter's ads platform.
+2. Add the pixel code to the appropriate parts of the Kwenta website.
+3. Ensure that tracking is functioning correctly by testing with a small ad campaign.
+4. Analyze the anonymized data collected to adjust and optimize future ad efforts.
